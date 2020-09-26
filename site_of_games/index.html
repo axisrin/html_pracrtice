@@ -56,10 +56,25 @@
             display: none;
         }
         #zatemnyasha:target {display: block}
+        #button
+        {
+            position: relative;
+            left: 44%;
+            margin: 30px;
+
+            font-family: "Comic Sans MS";
+            height: 40px;
+            width: 120px;
+            border: 5px solid gray;
+            padding: 5px;
+            text-align: center;
+            background: gray;
+            color: #f2f2f2;
+        }
     </style>
 </head>
 
-<body>
+<body onload="popup()">
 
     <div id="zatemnyasha">
         <div id="okno">
@@ -67,6 +82,13 @@
             <a href="#" class="close">Закрыть окошко</a>
         </div>
     </div>
+
+    <div id="button">
+        Кнопчка
+    </div>
+    <script>
+        document.getElementById('button').addEventListener("click",function (){alert("Ты что ноделал...")})
+    </script>
 
 
     <a id= "target_for_window" href="#zatemnyasha";>Призвать всплывающее окошко!</a>
