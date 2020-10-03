@@ -1,0 +1,117 @@
+ body
+{
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: white;
+}
+
+ h1 {
+   position: absolute;
+   left: 50%;
+   margin-right: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   font-family: "Foxlite Script";
+ }
+
+nav
+  {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topmenu > li {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+}
+
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+
+.boarder
+  {
+    text-align: center;
+    background: black;
+  }
+
+.forms
+  {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  outline: none;
+  font-family: Anson;
+  color: white;
+}
+
+.menu_swipe_down {
+  font-family: Anson;
+  color: white;
+  padding-left: 10px;
+}
+
+.main_menu .subtopmenu
+{
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 0 0 ;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: black;
+}
+
+.main_menu ul li:hover .subtopmenu {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.main_menu ul a {
+  color: white;
+}
+
+.subtopmenu
+{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.main_menu ul {
+  background: black;
+}
+
+.regis
+    {
+      display: inline-block;
+      margin: 10px;
+      background: black;
+      color: white;
+      padding: 10px;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      margin-right: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }

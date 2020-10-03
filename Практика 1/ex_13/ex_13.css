@@ -1,0 +1,45 @@
+
+body
+{
+    background: url("kot_glaza_chernyj_124134_3840x2400.jpg") ;
+    background-size: cover;
+}
+
+.topboarder
+{
+    position: absolute;
+    color: white;
+    top: 150px;
+    left: 20%;
+    margin-right: 100%;
+    bottom: 0%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.botter
+{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    margin-right: 10%;
+    font-size: 150%;
+    bottom: 10%;
+    font-family: "Silhouetto Script";
+}
+
+.botter p
+{
+    color: white;
+}
+
+.topboarder b
+{
+    font-family: Anson;
+    color: white;
+}
+
+.topboarder input
+{
+    color: black;
+}

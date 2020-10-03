@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regidtration</title>
+    <style>
+        @import "ex_11.css";
+    </style>
+</head>
+<body>
+
+<nav class="main_menu">
+    <ul class="topmenu">
+        <li><a href="ex_11.html">Home</a></li>
+        <li><a href="register.html">Registration</a></li>
+        <li><a href="#">Models<i class="menu_swipe_down"></i></a>
+            <ul class="subtopmenu">
+                <li><a href="#">Model 1</a></li>
+                <li><a href="#">Model 2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="about_us.html">About us</a></li>
+    </ul>
+    </nav>
+
+<div id="regis" class="regis">
+
+    <label class ="forms" for="email"><b>Email</b></label>
+    <input class ="forms" type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label class ="forms" for="phonenum"><b>Phone number</b></label>
+    <input class ="forms" type="text" placeholder="Enter Phone number" name="phonenum" id="phonenum" required><br>
+
+    <label class ="forms" for="name"><b>Name</b></label>
+    <input class ="forms" type="text" placeholder="Your Name" name="name" id="name" required><br>
+
+    <label class ="forms" for="sname"><b>Second Name</b></label>
+    <input class ="forms" type="text" placeholder="Your Second Name" name="sname" id="sname" required><br>
+
+    <label class ="forms" for="psw"><b>Password</b></label>
+    <input class ="forms" type="Password" placeholder="Enter Password"  name="psw" id="psw" required><br>
+
+    <label class ="forms" for="rpsw"><b>Rewrite Password</b></label>
+    <input class ="forms" type="Password" name="rpsw" placeholder="Rewrite Password" id="rpsw" required><br>
+
+    <h5>Пол</h5>
+    <select id="Sex" name="Sex" aria-required="true" onchange="Selected(this)">
+        <option value="0">-</option>
+        <option value="1" id="male">Мужской</option>
+        <option value="2" id="female">Женский</option>
+    </select><br>
+
+    <input class="forms" type="checkbox" name="agree" id="agree">
+    <label class="forms" for="agree"><i>I agree with private policy!</i></label>
+
+</div>
+
+</body>
+</html>

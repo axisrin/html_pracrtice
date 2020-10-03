@@ -1,0 +1,21 @@
+body
+{
+    background: url("stena_kirpich_kirpichnyj_141823_3840x2400.jpg");
+    background-size: cover;
+}
+
+.tondown
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
+}
+
+iframe
+{
+    left: 35%;
+    height: 150px;
+    width: 400px;
+}

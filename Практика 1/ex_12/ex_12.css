@@ -1,0 +1,28 @@
+body
+{
+    background: url("775114.jpg");
+    background-size: cover;
+}
+
+.video
+{
+    position: absolute;
+    left: 20%;
+    margin-right: 50%;
+    top: 20%;
+    transition: .5s;
+}
+
+.video video
+{
+    border: none;
+}
+
+.video p
+{
+    font-size: 120%;
+    font-family: "04b(RUS BY LYAJKA)";
+    color: white;
+    background: black;
+    background-size: cover;
+}
