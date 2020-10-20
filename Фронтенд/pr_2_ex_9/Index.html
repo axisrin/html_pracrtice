@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+    <p style="font-family: Bahnschrift">Прошин Алексей Васильевич</p>
+    <canvas id="elements_body" height="500" width="1000">
+        Zdarova;
+    </canvas>
+    <script>
+        var elements_body = document.getElementById("elements_body"),
+            ctx = elements_body.getContext('2d');
+        ctx.beginPath()
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50,50,450,950);
+        ctx.fillStyle = 'azure';
+        ctx.fillRect(100,100,350,350)
+    </script>
+</body>
+</html>

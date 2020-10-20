@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Data</title>
+    <style>
+        .chart-text{
+            font-family: Bahnschrift;
+            -moz-transform: translateY(0.25em);
+            -ms-transform: translateY(0.25em);
+            -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+        }
+        .chart-numb{
+            font-size: 0.6em;
+            line-height: 1;
+            text-anchor: middle;
+        }
+        .donut-segment
+        {
+            box-shadow: 0 0 0px #7EFA00;
+            transition-property: box-shadow;
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition-duration: 4s;
+        }
+
+        .donut-segment:hover
+        {
+            box-shadow: 0 0 10px #7EFA00;
+        }
+        .donut
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#EEFFF6" ></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4"
+                stroke-width="3"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#65E09A"
+                stroke-width="3" stroke-dasharray="75 25"
+                stroke-dashoffset="87.5"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#249053"
+                stroke-width="3" stroke-dasharray="25 75"
+                stroke-dashoffset="112.5"></circle>
+        <g class="chart-text">
+            <text x="21%" y="20%" class="chart-numb">
+                75%
+            </text>
+        </g>
+    </svg>
+</body>
+</html>

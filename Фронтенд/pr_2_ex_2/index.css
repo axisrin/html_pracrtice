@@ -1,0 +1,37 @@
+.first_sign
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.first_sign p
+{
+    font-family: Bahnschrift;
+}
+
+.second_sign
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    top: 1300px;
+}
+
+.second_sign p
+{
+    font-family: Bahnschrift;
+}
+
+.third_sign
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    top: 2600px;
+}
+
+.third_sign p
+{
+    font-family: Bahnschrift;
+}

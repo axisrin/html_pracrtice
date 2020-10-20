@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Correct answer</title>
+    <style>
+        .txt-mark
+        {
+            color: red;
+            padding: 3px;
+        }
+        .num-mark
+        {
+            color: red;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="action">
+        <p><label><span class="txt-mark">*</span>Имя Пользователя:<input type="text" name="inptxt" class="inptxt"
+                                                                      placeholder="Введите Имя"
+        required></label></p>
+        <p><label><span class="num-mark">*</span>Сколько вам лет ?<input type="number"
+                                                                         class="inpnumber"
+                                                                         placeholder="Введите свой возраст"
+                                                                         required></label> </p>
+        <p><label><span class="txt-mark">*</span>Вы учитесь или работаете?<input type="text" class="inptxt"
+        placeholder="Напишите ваш статус" required></label></p>
+        <p><label><span class="txt-mark">*</span>Сколько у вас свободного времени в день?
+        <input type="text" class="inptxt" placeholder="Сколько часов ?" required></label></p>
+        <p><label>Что вы обычно делаете в свободное время?
+        <input type="text" class="inptxt" placeholder="Напишите ответ на вопрос"></label></p>
+    </form>
+
+    <script type="text/javascript">
+
+        let ns = "\u2714";
+
+        for (var i = 0; i < 3 ; i++)
+        {
+            let inp = document.getElementsByClassName("inptxt")[i];
+            let sp = document.getElementsByClassName("txt-mark")[i];
+
+            inp.addEventListener("input", function (event) {
+                if (inp.valid || event.target.value == ""){
+                    sp.style.cssText = "color : red"
+                    sp.textContent = "*";
+                }
+                else
+                {
+                    sp.textContent = ns;
+                    sp.style.cssText = "color: green";
+                }
+            });
+        }
+
+        let inp = document.getElementsByClassName("inpnumber")[0];
+        let sp = document.getElementsByClassName("num-mark")[0];
+        inp.addEventListener("input",function (event) {
+            if (inp.valid || event.target.value == "" || event.target.value > 120 || event.target.value < 0){
+                sp.style.cssText = "color : red"
+                sp.textContent = "*";
+            }
+            else
+            {
+                sp.textContent = ns;
+                sp.style.cssText = "color: green";
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block Stylish</title>
+    <style>
+        .case
+        {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            box-shadow: inset 5px 5px 7px #EC3B86,
+                        inset -5px -5px 7px #EC3B86;
+            background: black;
+            font-family: Bahnschrift;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            vertical-align: center;
+            horiz-align: center;
+            transition-property: box-shadow;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .case:hover
+        {
+            box-shadow: inset 5px 5px 7px #84E900,
+                        inset -5px -5px 7px #84E900;
+        }
+    </style>
+</head>
+<body>
+    <div class="case">
+        <h1>Cool Text</h1>
+    </div>
+</body>
+</html>

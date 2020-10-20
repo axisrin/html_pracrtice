@@ -1,0 +1,40 @@
+.zdarova
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.zdarova p
+{
+    text-align: center;
+    top: 300px;
+    font-family: Bahnschrift;
+}
+
+.zdarova h1
+{
+    text-align: center;
+    top: 220px;
+    font-family: Bahnschrift;
+}
+
+.zdarova a [href^="tel:"] {
+    font-family: Bahnschrift;
+    text-align: center;
+}
+
+.zdarova img
+{
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    vertical-align: center;
+}

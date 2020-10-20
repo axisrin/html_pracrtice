@@ -1,0 +1,40 @@
+.header
+{
+    width: 100%;
+    background-color: crimson;
+    padding: 1px;
+    font-family: Bahnschrift;
+    font-size: 130%;
+}
+
+.left_rect
+{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 50%;
+    background-color: black;
+}
+
+.left_rect p
+{
+    padding-top: 5px;
+    color: aliceblue;
+}
+
+.right_rect
+{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 50%;
+    background-color: crimson;
+}
+
+.footer
+{
+    position: absolute;
+    top: 500px;
+    background-color: crimson;
+    width: 100%;
+}

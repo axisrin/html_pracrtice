@@ -1,0 +1,43 @@
+.red_progr progress
+{
+    width: 100px;
+    height: 20px;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.red_progr progress::-webkit-progress-bar{
+    background-color: gainsboro;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25) inset;
+}
+
+progress::-webkit-progress-value{
+    background-color: red;
+}
+
+meter
+{
+    color: cornflowerblue;
+    border: 5px gainsboro;
+    width: 100px;
+    height: 20px;
+
+}
+
+meter::-webkit-meter-suboptimum-value{
+    background-color: cornflowerblue;
+}
+
+meter::-webkit-meter-optimum-value{
+    background-color: cornflowerblue;
+}
+
+meter::-webkit-meter-even-less-good-value{
+    background-color: cornflowerblue;
+}
+
+meter::-webkit-meter-bar{
+    border-radius: 0px;
+}
+
