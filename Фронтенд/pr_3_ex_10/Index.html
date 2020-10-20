@@ -19,28 +19,28 @@
         }
         .square
         {
-            margin-top: 45vh;
-            margin-left: 45vw;
             position: relative;
             display: flex;
-            width: 5vw;
-            height: 5vw;
+            width: 20vw;
             align-items: center;
             justify-content: center;
             border: 2px #8C04A8 solid ;
-            padding: 20px;
         }
-        .square p
+
+        .square:after
         {
-            font-family: Bahnschrift;
-            position: relative;
+            content: '';
+            display: block;
+            padding-top: 100%;
         }
     </style>
 </head>
 <body>
     <div class="square_field">
         <div class="square">
-            <p>Zdarova Kak Dela? Normalno Dela Chto tam s den'gami?</p>
+
+                <p>Zdarova Kak Dela? Normalno Dela Chto tam s den'gami?</p>
+
         </div>
     </div>
 </body>

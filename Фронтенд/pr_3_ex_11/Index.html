@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checked Boxes</title>
+    <style>
+        label
+        {
+            background-color: revert;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="action" class="action" action="#">
+
+        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">HTML</label><br>
+        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">CSS</label><br>
+        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">JS</label><br>
+        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">U</label>
+
+    </form>
+
+    <script>
+
+        for (var i = 0; i < 2;i++){
+
+            lab = document.getElementsByClassName("color-chek")[i];
+            inp = document.getElementsByClassName("checked")[i];
+
+            inp.addEventListener("change", function () {
+
+                if (inp.checked) {
+                    lab.style.cssText = "background-color: yellow";
+                }
+                else
+                {
+                    lab.style.cssText = "background-color: revert";
+                }
+
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
