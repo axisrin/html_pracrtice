@@ -14,19 +14,20 @@
 
     <form name="action" class="action" action="#">
 
-        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">HTML</label><br>
-        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">CSS</label><br>
-        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">JS</label><br>
-        <label class="color-chek"><input name="checked1" class="checked" type="checkbox">U</label>
+        <label class="color-chek" for="ch1"><input id="ch1" name="checked1" class="checked" type="checkbox">HTML</label><br>
+        <label class="color-chek" for="ch2"><input id="ch2" name="checked2" class="checked" type="checkbox">CSS</label><br>
+        <label class="color-chek" for="ch3"><input id="ch3" name="checked3" class="checked" type="checkbox">JS</label><br>
+        <label class="color-chek" for="ch4"><input id="ch4" name="checked4" class="checked" type="checkbox">U</label>
 
+        <input type="submit" id="text" value="Отправить!">
     </form>
 
     <script>
 
-        for (var i = 0; i < 2;i++){
+        for (let i = 0; i < 4;i++){
 
-            lab = document.getElementsByClassName("color-chek")[i];
-            inp = document.getElementsByClassName("checked")[i];
+            let lab = document.getElementsByClassName("color-chek")[i];
+            let inp = document.getElementsByClassName("checked")[i];
 
             inp.addEventListener("change", function () {
 
