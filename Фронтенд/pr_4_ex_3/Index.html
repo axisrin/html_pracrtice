@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prac 3</title>
+    <style>
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .main_table
+        {
+            border-collapse: collapse;
+            font-family: Bahnschrift;
+            color: white;
+        }
+
+        .main_table th
+        {
+            border-bottom: 2px solid white;
+        }
+
+        .main_table td
+        {
+            border-bottom: 2px solid white;
+        }
+
+        .table-body
+        {
+            border-bottom: 2px solid white;
+            background: url("3999888.jpg") ;
+            text-align: center;
+        }
+
+        .table-body:hover
+        {
+            text-align: center;
+            color: black;
+            background: aliceblue;
+        }
+
+        .head-sec
+        {
+            text-align: left;
+        }
+
+        .main-second-table
+        {
+            font-family: Bahnschrift;
+            border-collapse: revert;
+            border-spacing: 20px 1px;
+            color: darkmagenta;
+            text-align: left;
+        }
+
+        .sec-body
+        {
+            color: darkmagenta;
+            text-align: left;
+        }
+
+        .sec-body:hover
+        {
+            background-color: lavender;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table class="main_table" >
+        <caption style="color: black ; ">Успеваемость команий</caption>
+        <tr style="color: crimson">
+            <th >№ Топа</th>
+            <th >Название Компании</th>
+            <th >Объём капитала</th>
+            <th >Количесвто Сотрудников</th>
+        </tr>
+        <tr class="table-body">
+            <td>1.</td>
+            <td>Яндекс</td>
+            <td>23 000 200 000 руб.</td>
+            <td>500 000</td>
+        </tr>
+        <tr class="table-body">
+            <td>2.</td>
+            <td>Google</td>
+            <td>1 232 000 200 000 $</td>
+            <td>350 000</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="main-second-table">
+        <caption style="color: black">Топ Аниме 2020 (по версии Shikimori)</caption>
+        <tr class="head-sec">
+            <th style=" border-bottom: 2px solid darkmagenta ; width: 100px">Топ</th>
+            <th style=" border-bottom: 2px solid darkmagenta; width: 100px">Название</th>
+            <th style=" border-bottom: 2px solid darkmagenta; width: 100px">Жанр</th>
+            <th style=" border-bottom: 2px solid darkmagenta; width: 100px">Студия</th>
+        </tr>
+        <tr class="sec-body">
+            <td style="width: 100px">1</td>
+            <td style="width: 100px">Госпожа Кагуя: в любви как на войне 2</td>
+            <td style="width: 100px">Комедия/Психологическое/Романтика/Школа/Сейнен</td>
+            <td style="width: 100px">A-1 Pictures</td>
+        </tr>
+        <tr class="sec-body">
+            <td style="width: 100px">2</td>
+            <td style="width: 100px">Созданный в Бездне: Рассвет глубокой души</td>
+            <td style="width: 100px">Приключения/Драма/Фэнтези/Детектив/Фантастика</td>
+            <td style="width: 100px">Kinema citrus Co.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

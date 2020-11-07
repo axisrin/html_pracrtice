@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prac 7</title>
+    <style>
+
+        body
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .prognoz
+        {
+            display: flex;
+            margin-left: 2vw;
+            margin-top: 2vh;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .prognoz-header
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-start;
+            font-family: Bahnschrift;
+        }
+
+        .prognoz-header-array-days
+        {
+            color: black;
+            font-weight: 700;
+            font-size: 140%;
+            line-height: 100%;
+
+        }
+
+        .prognoz-header-array-days-non-state
+        {
+            background-color: darkgrey;
+            border-radius: 100px;
+            font-weight: 100;
+            padding: 5px 12px;
+            font-size: 76%;
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial;
+            align-self: center;
+        }
+
+        .prognoz-header-array-days-non-state:hover
+        {
+            background-color: lightgray;
+        }
+
+        .prognoz-body-days
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        .prognoz-body-days-one-day
+        {
+            display: flex;
+            flex-direction: column;
+            width: 74px;
+            border: solid 2px transparent;
+            padding: 5px;
+            height: 150px;
+        }
+
+        .prognoz-body-days-one-day:hover
+        {
+            border: solid 2px lightgray;
+        }
+
+        .prognoz-body-days-one-day-weekday
+        {
+            font-weight: 400;
+            font-family: Bahnschrift;
+            font-size: 120%;
+        }
+
+        .prognoz-body-days-one-day-data
+        {
+            font-family: Arial;
+            font-weight: 300;
+            font-size: 70%;
+            color: lightgray;
+        }
+
+        .prognoz-body-days-one-day-picture
+        {
+            margin-top: 4px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .prognoz-body-days-one-day-foram
+        {
+            font-weight: 700;
+            font-size: 105%;
+            margin-top: 17px;
+            font-family: Bahnschrift;
+        }
+
+        .prognoz-body-days-one-day-forpm
+        {
+            font-weight: 300;
+            font-size: 70%;
+            margin-top: 1px;
+            font-family: Bahnschrift;
+            color: lightgray;
+        }
+
+        .prognoz-body-days-one-day-throughday
+        {
+            margin-top: 6px;
+            font-size: 70%;
+            font-weight: 300;
+            color: lightgray;
+            font-family: Bahnschrift;
+            /*max-width: 53px;*/
+        }
+
+        .prognoz-body-days-one-day-weekday-weekend
+        {
+            font-weight: 400;
+            font-family: Bahnschrift;
+            font-size: 120%;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="prognoz">
+
+        <div class="prognoz-header">
+            <span class="prognoz-header-array-days" id="main">Прогноз на 10 дней</span>
+            <span class="prognoz-header-array-days-non-state">Подробный прогноз на 10 дней</span>
+            <span class="prognoz-header-array-days-non-state">На месяц</span>
+        </div>
+
+        <div class="prognoz-body-days">
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday">Сегодня</span>
+                <span class="prognoz-body-days-one-day-data">29 сент</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="020-cloudy.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">днём +17&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">ночью +9&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Облачно с прояснениями</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday">Ср</span>
+                <span class="prognoz-body-days-one-day-data">30 сент</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="020-cloudy.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+19&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+11&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Облачно с прояснениями</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday">Чт</span>
+                <span class="prognoz-body-days-one-day-data">1 окт</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="003-sun.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+20&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+10&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Малооблачно</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday">Пт</span>
+                <span class="prognoz-body-days-one-day-data">2 окт</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="003-sun.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+20&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+10&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Малооблачно</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday-weekend">Сб</span>
+                <span class="prognoz-body-days-one-day-data">3 окт</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="020-cloudy.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+19&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+9&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Облачно с прояснениями</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday-weekend">Вс</span>
+                <span class="prognoz-body-days-one-day-data">4 окт</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="cloudy-night.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+19&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+9&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Облачно с прояснениями</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday">Пн</span>
+                <span class="prognoz-body-days-one-day-data">5 окт</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="moon.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+18&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+11&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Ясно</span>
+            </div>
+            <div class="prognoz-body-days-one-day">
+                <span class="prognoz-body-days-one-day-weekday">Вт</span>
+                <span class="prognoz-body-days-one-day-data">6 окт</span>
+                <div class="prognoz-body-days-one-day-picture">
+                    <span><img src="cloud.png" class="prognoz-body-days-one-day-picture"></span>
+                </div>
+                <span class="prognoz-body-days-one-day-foram">+15&deg;</span>
+                <span class="prognoz-body-days-one-day-forpm">+12&deg;</span>
+                <span class="prognoz-body-days-one-day-throughday">Пасмурно</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
